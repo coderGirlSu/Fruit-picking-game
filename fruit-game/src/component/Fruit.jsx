@@ -64,7 +64,7 @@ const InitialFruit = [
 
 const Fruit = () =>{
 
-    const[data,setData] = useState(InitialFruit)
+    // const[data,setData] = useState(InitialFruit)
 
     function handleClick(event){
         console.log("you clicked on" + event.target.innerText)
