@@ -29,6 +29,34 @@ const InitialFruit = [
         name: 'banana',
         emoji: '🍌'
     },
+    {
+        name: 'banana',
+        emoji: '🍍'
+    },
+    {
+        name: 'banana',
+        emoji: '🥥'
+    },
+    {
+        name: 'banana',
+        emoji: '🥝'
+    },
+    {
+        name: 'banana',
+        emoji: '🍋'
+    },
+    {
+        name: 'banana',
+        emoji: '🍉'
+    },
+    {
+        name: 'banana',
+        emoji: '🍏'
+    },
+    {
+        name: 'banana',
+        emoji: '🍓'
+    },
 ]
 
 
@@ -38,11 +66,14 @@ const Fruit = () =>{
 
     // const[data,setData] = useState(InitialFruit)
 
+    function handleClick(event){
+        console.log("you clicked on" + event.target.innerText)
+    }
+    
     let fruit = InitialFruit[Math.floor(Math.random() * InitialFruit.length)].emoji
     
     return (
-        <div>{fruit} </div>
-
+        <div className="fruit" value={fruit} onClick={handleClick}> {fruit} </div>
     )
 }
 
