@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 
 const InitialFruit = [
     {
@@ -34,22 +34,14 @@ const InitialFruit = [
 
 
 
-
-
 const Fruit = () =>{
 
-    const[data,setData] = useState(InitialFruit)
+    // const[data,setData] = useState(InitialFruit)
 
+    let fruit = InitialFruit[Math.floor(Math.random() * InitialFruit.length)].emoji
+    
     return (
-        <div>
-            {data.map((obj,index)=>{
-                return (
-                    <div key={index}> {obj.emoji}</div>
-                )
-
-            })}
-
-        </div>
+        <div>{fruit} </div>
 
     )
 }
