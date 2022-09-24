@@ -10,11 +10,6 @@
     position: absolute;
     font-size: 7vw;
     z-index: 1;
-    width: 8vw;
-}
-
-.fruit > img {
-    width: 100%;
 }
 
 #fruit1 {
