@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import {React,useState} from "react";
 
 const InitialFruit = [
     {
@@ -64,11 +64,11 @@ const InitialFruit = [
     
 ]
 
+
 const Fruit = () =>{
 
     const[isVisible,setVisible] = useState(true)
-    
-
+   
     function handleClick(){
         let randomTime = Math.floor(Math.random() * (4000 - 500) + 500)
         setVisible(false)
