@@ -64,11 +64,11 @@ const InitialFruit = [
     
 ]
 
-const Fruit = () =>{
+const Fruit = (props) => {
+    const { top, left } = props
 
     const[isVisible,setVisible] = useState(true)
     
-
     function handleClick(){
         let randomTime = Math.floor(Math.random() * (4000 - 500) + 500)
         setVisible(false)
@@ -77,22 +77,16 @@ const Fruit = () =>{
         },randomTime)
     }
 
-
     let randomFruit = InitialFruit[Math.floor(Math.random() * InitialFruit.length)].emoji
    
+    const style = {
+        top: top,
+        left: left
+    }
     return (
-       
-        <div>
-        {
-        isVisible && 
-        <div onClick={handleClick}> 
-        {randomFruit}
+        <div className="fruit" onClick={handleClick} style={style}> 
+            {isVisible && randomFruit}
         </div>
-        }
-
-    </div>
-        
-      
     )
 }
 
