@@ -70,15 +70,16 @@ const Fruit = () =>{
     
 
     function handleClick(){
+        let randomTime = Math.floor(Math.random() * (4000 - 500) + 500)
         setVisible(false)
         setTimeout(()=>{
             setVisible(true)
-        },1000)
+        },randomTime)
     }
 
 
     let randomFruit = InitialFruit[Math.floor(Math.random() * InitialFruit.length)].emoji
-    
+   
     return (
        
         <div>
