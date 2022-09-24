@@ -15,19 +15,21 @@ function App() {
 
 
   return (
-<>
-    <Fruit />
-    <Fruit />
-    <Fruit />
-    <Fruit />
-    <Fruit />
-    <Fruit />
-    <Fruit />
-    <Fruit />
-    <Fruit />
-    <Fruit />
-    <Score store={store}/>
-  </>
+    <div>
+      <img id="tree" src="images/tree.png" alt="tree" />
+
+      <Fruit id="fruit1" />
+      <Fruit />
+      <Fruit />
+      <Fruit />
+      <Fruit />
+      <Fruit />
+      <Fruit />
+      <Fruit />
+      <Fruit />
+      <Fruit />
+      <Score store={store}/>
+    </div>
   );
 }
 

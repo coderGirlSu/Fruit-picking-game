@@ -1,0 +1,18 @@
+#tree {
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: -1;
+}
+
+.fruit {
+    position: absolute;
+    font-size: 7vw;
+    z-index: 1;
+}
+
+#fruit1 {
+    top: 150px;
+    left: 150px;
+}
