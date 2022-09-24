@@ -1,6 +1,9 @@
+import { useGlobalState } from "../utils/stateContext"
 
-const Score =(prop)=>{
-    const {score} = prop.store
+const Score =()=>{
+    const {store, dispatch} =useGlobalState()
+    const {score} = store
+    
     return (
         <div>
         {score}
