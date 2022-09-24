@@ -1,7 +1,7 @@
 import { useGlobalState } from "../utils/stateContext"
 
 const Score =()=>{
-    const {store, dispatch} =useGlobalState()
+    const {store} =useGlobalState()
     const {score} = store
     
     return (
