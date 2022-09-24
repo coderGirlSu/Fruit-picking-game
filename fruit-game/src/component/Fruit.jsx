@@ -90,7 +90,7 @@ const Fruit = (props) => {
    
     return (
         <div className="fruit" onClick={handleClick} id={id}> 
-            {isVisible && <img src={InitialFruit[0].url} />}
+            {isVisible && <img src={InitialFruit[0].url} alt="apple"/>}
         </div>
     )
 }
