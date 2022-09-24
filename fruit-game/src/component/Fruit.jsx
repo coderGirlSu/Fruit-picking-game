@@ -3,7 +3,8 @@ import {React,useState} from "react";
 const InitialFruit = [
     {
         name: 'apple',
-        emoji: '🍎'
+        emoji: '🍎',
+        url: "images/apple.png"
     },
     {
         name: 'cherry',
@@ -85,11 +86,11 @@ const Fruit = (props) => {
         },randomTime)
     }
 
-    let randomFruit = InitialFruit[Math.floor(Math.random() * InitialFruit.length)].emoji
+    // let randomFruit = InitialFruit[Math.floor(Math.random() * InitialFruit.length)].emoji
    
     return (
         <div className="fruit" onClick={handleClick} id={id}> 
-            {isVisible && randomFruit}
+            {isVisible && <img src={InitialFruit[0].url} />}
         </div>
     )
 }
