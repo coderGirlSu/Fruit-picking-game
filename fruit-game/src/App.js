@@ -2,6 +2,7 @@ import Fruit from "./component/Fruit";
 import {React,useReducer} from "react";
 import reducer from "./utils/scoreReducer";
 import Score from "./component/Score";
+import { StateContext } from "./utils/stateContext";
 
 
 
@@ -10,14 +11,16 @@ const initialState ={
 }
 
 function App() {
+
   const[store, dispatch] = useReducer(reducer, initialState)
   
 
 
   return (
     <div>
+      
       <img id="tree" src="images/tree.png" alt="tree" />
-
+<StateContext.Provider value={{store,dispatch}}>
       <Fruit id="fruit1" />
       <Fruit id="fruit2" />
       <Fruit id="fruit3" />
@@ -28,7 +31,8 @@ function App() {
       <Fruit id="fruit8" />
       <Fruit id="fruit9" />
       <Fruit id="fruit10" />
-      <Score store={store}/>
+      <Score />
+  </StateContext.Provider>
     </div>
   );
 }
