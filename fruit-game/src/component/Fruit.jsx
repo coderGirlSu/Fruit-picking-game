@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 
 const InitialFruit = [
     {
@@ -57,23 +57,38 @@ const InitialFruit = [
         name: 'banana',
         emoji: '🍓'
     },
+    {
+        name: 'poop',
+        emoji: '🕷'
+    },
+    
 ]
-
-
-
 
 const Fruit = () =>{
 
-    // const[data,setData] = useState(InitialFruit)
-
-    function handleClick(event){
-        console.log("you clicked on" + event.target.innerText)
-    }
+    const[isVisible,setVisible] = useState(true)
     
-    let fruit = InitialFruit[Math.floor(Math.random() * InitialFruit.length)].emoji
+
+    function handleClick(){
+        setVisible(false)
+    }
+
+
+    let randomFruit = InitialFruit[Math.floor(Math.random() * InitialFruit.length)].emoji
     
     return (
-        <div className="fruit" value={fruit} onClick={handleClick}> {fruit} </div>
+       
+        <div>
+        {
+        isVisible && 
+        <div onClick={handleClick}> 
+        {randomFruit}
+        </div>
+        }
+
+    </div>
+        
+      
     )
 }
 
