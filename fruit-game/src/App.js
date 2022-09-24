@@ -9,7 +9,7 @@ function App() {
     <div>
       <img id="tree" src="images/tree.png" alt="tree" />
 
-      <Fruit top={150} left={150} />
+      <Fruit id="fruit1" />
       <Fruit />
       <Fruit />
       <Fruit />

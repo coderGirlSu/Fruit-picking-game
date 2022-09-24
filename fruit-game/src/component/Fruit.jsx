@@ -65,7 +65,7 @@ const InitialFruit = [
 ]
 
 const Fruit = (props) => {
-    const { top, left } = props
+    const { id } = props
 
     const[isVisible,setVisible] = useState(true)
     
@@ -79,12 +79,8 @@ const Fruit = (props) => {
 
     let randomFruit = InitialFruit[Math.floor(Math.random() * InitialFruit.length)].emoji
    
-    const style = {
-        top: top,
-        left: left
-    }
     return (
-        <div className="fruit" onClick={handleClick} style={style}> 
+        <div className="fruit" onClick={handleClick} id={id}> 
             {isVisible && randomFruit}
         </div>
     )
