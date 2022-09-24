@@ -71,6 +71,9 @@ const Fruit = () =>{
 
     function handleClick(){
         setVisible(false)
+        setTimeout(()=>{
+            setVisible(true)
+        },1000)
     }
 
 
