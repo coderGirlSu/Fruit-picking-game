@@ -31,7 +31,7 @@ const InitialFruit = [
     },
     {
         name: 'banana',
-        emoji: '🍍'
+        emoji: '🍊'
     },
     {
         name: 'banana',
@@ -58,8 +58,16 @@ const InitialFruit = [
         emoji: '🍓'
     },
     {
+        name: 'caterpillar',
+        emoji: '🐛'
+    },
+    {
         name: 'poop',
-        emoji: '🕷'
+        emoji: '🍐'
+    },
+    {
+        name: 'poop',
+        emoji: '🥭'
     },
     
 ]
