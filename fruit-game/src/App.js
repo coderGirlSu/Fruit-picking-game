@@ -19,7 +19,7 @@ function App() {
   return (
     <div>
       
-      <img id="tree" src="images/tree.png" alt="tree" />
+      <img id="tree" src="images/tree3.png" alt="tree" />
 <StateContext.Provider value={{store,dispatch}}>
       <Fruit id="fruit1" />
       <Fruit id="fruit2" />

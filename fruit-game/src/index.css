@@ -8,38 +8,38 @@
 
 .fruit {
     position: absolute;
-    font-size: 7vw;
+    font-size: 6vw;
     z-index: 1;
 }
 
 #fruit1 {
-    top: 18vw;
-    left: 9vw;
+    top: 10vw;
+    left: 10vw;
 }
 
 #fruit2 {
-    top: 33vw;
-    left: 27vw;
+    top: 2vw;
+    left: 24vw;
 }
 
 #fruit3 {
-    top: 49vw;
-    left: 20vw;
+    top: 124vw;
+    left: 18vw;
 }
 
 #fruit4 {
-    top: 32vw;
-    left: 57vw;
+    top: 27vw;
+    left: 49vw;
 }
 
 #fruit5 {
-    top: 20vw;
-    left: 40vw;
+    top: 27vw;
+    left: 82vw;
 }
 
 #fruit6 {
-    top: 44vw;
-    left: 50vw;
+    top: 16vw;
+    left: 35vw;
 }
 
 #fruit7 {
