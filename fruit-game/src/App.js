@@ -4,6 +4,7 @@ import reducer from "./utils/scoreReducer";
 import Score from "./component/Score";
 import { StateContext } from "./utils/stateContext";
 import Time from "./component/Time";
+import StartGame from "./component/StartGame";
 
 
 
@@ -35,7 +36,9 @@ function App() {
       <Fruit id="fruit10" />
       <Score />
       <Time />
+      <StartGame />
   </StateContext.Provider>
+  
     </div>
   );
 }
