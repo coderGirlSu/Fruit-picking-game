@@ -1,14 +1,14 @@
 import { useGlobalState } from "../utils/stateContext"
 
-const Score =()=>{
+const Time =()=>{
     const {store} =useGlobalState()
-    const {score} = store
+    const {time} = store
     
     return (
-        <div className="score">
-        {score}
+        <div className="time">
+        {time}
         </div>
     )
 }
 
-export default Score
+export default Time

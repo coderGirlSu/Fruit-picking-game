@@ -3,11 +3,13 @@ import {React,useReducer} from "react";
 import reducer from "./utils/scoreReducer";
 import Score from "./component/Score";
 import { StateContext } from "./utils/stateContext";
+import Time from "./component/Time";
 
 
 
 const initialState ={
-  score:0
+  score:0,
+  time:0
 }
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
       <Fruit id="fruit9" />
       <Fruit id="fruit10" />
       <Score />
+      <Time />
   </StateContext.Provider>
     </div>
   );
