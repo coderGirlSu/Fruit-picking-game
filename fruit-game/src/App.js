@@ -1,6 +1,6 @@
 import Fruit from "./component/Fruit";
 import {React,useReducer} from "react";
-import reducer from "./utils/scoreReducer";
+import reducer from "./utils/reducer";
 import Score from "./component/Score";
 import { StateContext } from "./utils/stateContext";
 import Time from "./component/Time";
@@ -10,7 +10,8 @@ import StartGame from "./component/StartGame";
 
 const initialState ={
   score:0,
-  time:0
+  time:0,
+  start: false,
 }
 
 function App() {
@@ -21,10 +22,9 @@ function App() {
 
   return (
     <div>
-      
       <img id="tree" src="images/tree3.png" alt="tree" />
 <StateContext.Provider value={{store,dispatch}}>
-      <Fruit id="fruit1" />
+  { store.start && <><Fruit id="fruit1" />
       <Fruit id="fruit2" />
       <Fruit id="fruit3" />
       <Fruit id="fruit4" />
@@ -38,10 +38,10 @@ function App() {
       <Fruit id="fruit12" />
       <Fruit id="fruit13" />
       <Fruit id="fruit14" />
-      <Fruit id="fruit15" />
+      <Fruit id="fruit15" /></>}
       <Score />
       <Time />
-      <StartGame />
+      { !store.start && <StartGame />}
   </StateContext.Provider>
   
     </div>

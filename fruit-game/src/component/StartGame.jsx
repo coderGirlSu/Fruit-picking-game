@@ -1,11 +1,13 @@
-
 import { useGlobalState } from "../utils/stateContext"
+
 const StartGame =()=>{
-    const {store} =useGlobalState()
-    const {time} = store
+    const {store,dispatch} = useGlobalState()
+    const {start} = store
     
 function handleClick(){
-    
+    dispatch({
+        type:'setStartGame', 
+    })
 }
     
     return (
