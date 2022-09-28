@@ -92,10 +92,12 @@ const Fruit = (props) => {
             if(event.target.innerText === '🕷'){
                 let sound = new Audio("sounds/spider.wav")
                 sound.play()
-            }else{
+            }if (event.target.innerText === '🐛') {
+                let sound = new Audio("sounds/mao.wav")
+                sound.play()   
+            } else{
             let sound = new Audio("sounds/pick2.mp3")
             sound.play()
-
             }
             
 
