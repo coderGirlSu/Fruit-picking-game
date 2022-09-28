@@ -34,6 +34,11 @@ function App() {
       <Fruit id="fruit8" />
       <Fruit id="fruit9" />
       <Fruit id="fruit10" />
+      <Fruit id="fruit11" />
+      <Fruit id="fruit12" />
+      <Fruit id="fruit13" />
+      <Fruit id="fruit14" />
+      <Fruit id="fruit15" />
       <Score />
       <Time />
       <StartGame />

@@ -13,18 +13,18 @@
 }
 
 #fruit1 {
-    top: 10vw;
-    left: 10vw;
+    top: 105vw;
+    left: 29vw;
 }
 
 #fruit2 {
-    top: 2vw;
-    left: 24vw;
+    top: 103vw;
+    left: 86vw;
 }
 
 #fruit3 {
-    top: 124vw;
-    left: 18vw;
+    top: 129vw;
+    left: 25vw;
 }
 
 #fruit4 {
@@ -48,19 +48,44 @@
 }
 
 #fruit8 {
-    top: 32vw;
-    left: 71vw;
+    top: 139vw;
+    left: 17vw;
 }
 
 #fruit9 {
-    top: 49vw;
-    left: 80vw;
+    top: 111vw;
+    left: 78vw;
 }
 
 #fruit10 {
-    top: 20vw;
-    left: 58vw;
+    top: 92vw;
+    left: 21vw;
 }
+
+#fruit11 {
+    top: 82vw;
+    left: 60vw;
+}
+#fruit12 {
+    top: 110vw;
+    left: 14vw;
+}
+
+#fruit13 {
+    top: 23vw;
+    left: 73vw;
+}
+
+#fruit14 {
+    top: 79vw;
+    left: 69vw;
+}
+
+#fruit15 {
+    top: 78vw;
+    left: 88vw;
+}
+
 
 .score{
     position: absolute;
