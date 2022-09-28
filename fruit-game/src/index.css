@@ -1,3 +1,7 @@
+#root {
+max-width: 100%;
+}
+
 #tree {
     position:absolute;
     top: 0;
@@ -102,7 +106,7 @@
 .scoreLogo{
     position:absolute;
     float: left;
-    font-size: 8vw;  
+    font-size: 40px;  
     top: -7px;
 }
 
@@ -129,7 +133,7 @@
 .timeLogo{
     position:absolute;
     float: left;
-    font-size: 8vw;  
+    font-size: 40px;  
     top: -7px;
 }
 
@@ -153,6 +157,7 @@
     position: absolute;
     left: 29%;
     top: 45%;
+    z-index: 1;
    
 
 }
