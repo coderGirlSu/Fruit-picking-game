@@ -11,6 +11,11 @@ export default function reducer(state,action){
                 ...state,
                 score: newScore
             }
+        }case 'setStartGame':{
+            return{
+                ...state,
+                start:true
+            }
         }
         
     

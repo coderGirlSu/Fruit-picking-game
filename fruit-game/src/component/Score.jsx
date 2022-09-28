@@ -6,7 +6,10 @@ const Score =()=>{
     
     return (
         <div className="score">
-        {score}
+            <div className="scoreLogo">🍊</div>
+            <div className="scoreBackground">  
+                <div className="scoreNumber">{score}</div>
+            </div>
         </div>
     )
 }

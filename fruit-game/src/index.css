@@ -1,3 +1,7 @@
+#root {
+max-width: 100%;
+}
+
 #tree {
     position:absolute;
     top: 0;
@@ -13,18 +17,18 @@
 }
 
 #fruit1 {
-    top: 10vw;
-    left: 10vw;
+    top: 105vw;
+    left: 29vw;
 }
 
 #fruit2 {
-    top: 2vw;
-    left: 24vw;
+    top: 103vw;
+    left: 86vw;
 }
 
 #fruit3 {
-    top: 124vw;
-    left: 18vw;
+    top: 129vw;
+    left: 25vw;
 }
 
 #fruit4 {
@@ -48,28 +52,67 @@
 }
 
 #fruit8 {
-    top: 32vw;
-    left: 71vw;
+    top: 139vw;
+    left: 17vw;
 }
 
 #fruit9 {
-    top: 49vw;
-    left: 80vw;
+    top: 111vw;
+    left: 78vw;
 }
 
 #fruit10 {
-    top: 20vw;
-    left: 58vw;
+    top: 92vw;
+    left: 21vw;
 }
+
+#fruit11 {
+    top: 82vw;
+    left: 60vw;
+}
+#fruit12 {
+    top: 110vw;
+    left: 14vw;
+}
+
+#fruit13 {
+    top: 23vw;
+    left: 73vw;
+}
+
+#fruit14 {
+    top: 79vw;
+    left: 69vw;
+}
+
+#fruit15 {
+    top: 78vw;
+    left: 88vw;
+}
+
 
 .score{
     position: absolute;
+    width: 30%;
+}
+
+.scoreBackground{
     background-color: rgb(132, 47, 19);
     padding: 5px;
-    color: white;
     border: solid 3px rgb(165, 95, 42);
-    border-radius: 30px;
-    width: 20%;
+    border-radius: 30px; 
+}
+
+.scoreLogo{
+    position:absolute;
+    float: left;
+    font-size: 40px;  
+    top: -7px;
+}
+
+.scoreNumber {
+    overflow: hidden;
+    color: white;
     text-align: center;
     font-family: 'Rubik Dirt', cursive;
 }
@@ -77,13 +120,44 @@
 .time {
     right:9px;
     position: absolute;
+    width: 30%;
+}
+
+.timeBackground{
     background-color: rgb(132, 47, 19);
     padding: 5px;
-    color: white;
     border: solid 3px rgb(165, 95, 42);
-    border-radius: 30px;
-    width: 20%;
+    border-radius: 30px; 
+}
+
+.timeLogo{
+    position:absolute;
+    float: left;
+    font-size: 40px;  
+    top: -7px;
+}
+
+.timeNumber {
+    overflow: hidden;
+    color: white;
     text-align: center;
     font-family: 'Rubik Dirt', cursive;
+}
+
+.StartGame {
+    background-color: rgb(197, 23, 23);
+    padding: 20px;
+    font-size: 5vw;
+    color: rgb(232, 205, 0);
+    border: solid 3px rgb(232, 205, 0);
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    font-family: 'Rubik Dirt', cursive;
+    position: absolute;
+    left: 29%;
+    top: 45%;
+    z-index: 1;
+   
 
 }
