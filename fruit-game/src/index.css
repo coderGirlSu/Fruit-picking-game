@@ -89,12 +89,26 @@
 
 .score{
     position: absolute;
+    width: 30%;
+}
+
+.scoreBackground{
     background-color: rgb(132, 47, 19);
     padding: 5px;
-    color: white;
     border: solid 3px rgb(165, 95, 42);
-    border-radius: 30px;
-    width: 20%;
+    border-radius: 30px; 
+}
+
+.scoreLogo{
+    position:absolute;
+    float: left;
+    font-size: 8vw;  
+    top: -7px;
+}
+
+.scoreNumber {
+    overflow: hidden;
+    color: white;
     text-align: center;
     font-family: 'Rubik Dirt', cursive;
 }
@@ -102,15 +116,28 @@
 .time {
     right:9px;
     position: absolute;
+    width: 30%;
+}
+
+.timeBackground{
     background-color: rgb(132, 47, 19);
     padding: 5px;
-    color: white;
     border: solid 3px rgb(165, 95, 42);
-    border-radius: 30px;
-    width: 20%;
+    border-radius: 30px; 
+}
+
+.timeLogo{
+    position:absolute;
+    float: left;
+    font-size: 8vw;  
+    top: -7px;
+}
+
+.timeNumber {
+    overflow: hidden;
+    color: white;
     text-align: center;
     font-family: 'Rubik Dirt', cursive;
-
 }
 
 .StartGame {

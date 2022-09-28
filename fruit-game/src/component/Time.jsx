@@ -6,8 +6,12 @@ const Time =()=>{
     
     return (
         <div className="time">
-        {time}
+            <div className="timeLogo">⏳</div>
+            <div className="timeBackground">
+                <div className="timeNumber">{time}</div>
+            </div>
         </div>
+        
     )
 }
 
