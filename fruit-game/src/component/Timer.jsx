@@ -1,18 +1,21 @@
 import { useGlobalState } from "../utils/stateContext"
 
-const Time =()=>{
+const Timer =()=>{
     const {store} =useGlobalState()
-    const {time} = store
+    const {timer} = store
+
+
+    
     
     return (
-        <div className="time">
+        <div className="timer">
             <div className="timeLogo">⏳</div>
             <div className="timeBackground">
-                <div className="timeNumber">{time}</div>
+                <div className="timeNumber">{timer}</div>
             </div>
         </div>
         
     )
 }
 
-export default Time
+export default Timer

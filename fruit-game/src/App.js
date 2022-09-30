@@ -3,14 +3,14 @@ import {React,useReducer} from "react";
 import reducer from "./utils/reducer";
 import Score from "./component/Score";
 import { StateContext } from "./utils/stateContext";
-import Time from "./component/Time";
+import Timer from "./component/Timer";
 import StartGame from "./component/StartGame";
 
 
 
 const initialState ={
   score:0,
-  time:0,
+  timer:60,
   start: false,
 }
 
@@ -38,9 +38,9 @@ function App() {
       <Fruit id="fruit12" />
       <Fruit id="fruit13" />
       <Fruit id="fruit14" />
-      <Fruit id="fruit15" /></>}
+      <Fruit id="fruit15" />
       <Score />
-      <Time />
+      <Timer /> </>}
       { !store.start && <StartGame />}
   </StateContext.Provider>
   

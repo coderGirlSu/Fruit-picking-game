@@ -1,14 +1,21 @@
 import { useGlobalState } from "../utils/stateContext"
 
 const StartGame =()=>{
-    const {store,dispatch} = useGlobalState()
-    const {start} = store
+    const {dispatch} = useGlobalState()
+
+    function updateTimer(){
+        dispatch({
+            type:"updateTimer"
+        })
+    }
     
-function handleClick(){
-    dispatch({
-        type:'setStartGame', 
-    })
-}
+    function handleClick(){
+        let myInterval = setInterval(updateTimer,1000)
+        dispatch({ 
+            type:'setStartGame',
+            data: myInterval
+        })
+    }
     
     return (
         <div className="StartGame">

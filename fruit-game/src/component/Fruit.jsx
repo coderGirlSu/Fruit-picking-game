@@ -115,7 +115,6 @@ const Fruit = (props) => {
         handleClick()
         setRandomFruit(InitialFruit[Math.floor(Math.random() * InitialFruit.length)].emoji)
     },randomTime)
-    console.log("hhh")
     // eslint-disable-next-line 
 },[])  
 
