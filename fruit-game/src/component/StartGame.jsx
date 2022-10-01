@@ -2,10 +2,12 @@ import { useGlobalState } from "../utils/stateContext"
 
 const StartGame =()=>{
     const {dispatch} = useGlobalState()
+    
 
     function updateTimer(){
         dispatch({
-            type:"updateTimer"
+            type:"updateTimer",
+            
         })
     }
     

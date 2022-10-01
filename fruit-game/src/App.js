@@ -5,13 +5,16 @@ import Score from "./component/Score";
 import { StateContext } from "./utils/stateContext";
 import Timer from "./component/Timer";
 import StartGame from "./component/StartGame";
+import TimeUp from "./component/TimeUp";
+import WaterMark from "./component/WaterMark";
 
 
 
 const initialState ={
   score:0,
-  timer:60,
+  timer:5,
   start: false,
+  showTimeUp:false
 }
 
 function App() {
@@ -21,7 +24,7 @@ function App() {
 
 
   return (
-    <div>
+    <div id="app">
       <img id="tree" src="images/tree3.png" alt="tree" />
 <StateContext.Provider value={{store,dispatch}}>
   { store.start && <><Fruit id="fruit1" />
@@ -42,7 +45,9 @@ function App() {
       <Score />
       <Timer /> </>}
       { !store.start && <StartGame />}
+      {store.showTimeUp && <TimeUp />}
   </StateContext.Provider>
+    <WaterMark />
   
     </div>
   );

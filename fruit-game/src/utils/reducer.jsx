@@ -12,20 +12,22 @@ export default function reducer(state,action){
                 score: newScore
             }
         }case 'setStartGame':{
-            
-         
+
             return{
                 ...state,
                 start:true,
+                timer:5,
+                interval:action.data
             }
         }case 'updateTimer':{
-            function makeAlert(){
-                alert("Time up!")
-            }
             let countdown = state.timer -1 
             if(state.timer < 1){
-                clearInterval(action.data)
-                // makeAlert()
+                clearInterval(state.interval)
+                return{
+                    ...state,
+                    showTimeUp:true,
+                    start: false,
+                }
             }else{
                 return{
                     ...state,

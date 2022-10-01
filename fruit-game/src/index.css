@@ -1,98 +1,109 @@
 #root {
-max-width: 100%;
+    /* max-width: 100%; */
+}
+
+#app{
+    position:absolute;
+    top:0;
+    bottom: 0px;
+    /* height: fit-content; */
+    /* width: fit-content; */
+    /* max-width: 100%; */
 }
 
 #tree {
-    position:absolute;
-    top: 0;
-    left:0;
-    width: 100%;
+    /* position:absolute; */
+    /* top: 0; */
+    /* left:0; */
+    /* width: 100%; */
+    height: 100%;
     z-index: -1;
 }
 
 .fruit {
     position: absolute;
-    font-size: 6vw;
+    font-size: 4vh;
     z-index: 1;
 }
 
 #fruit1 {
-    top: 105vw;
-    left: 29vw;
+    top: 65vh;
+    left: 9vh;
 }
 
 #fruit2 {
-    top: 103vw;
-    left: 86vw;
+    top: 72vh;
+    left: 4vh;
 }
 
 #fruit3 {
-    top: 129vw;
-    left: 25vw;
+    top: 9vh;
+    left: 32vh;
 }
 
 #fruit4 {
-    top: 27vw;
-    left: 49vw;
+    top: 45vh;
+    left: 43vh;
 }
 
 #fruit5 {
-    top: 27vw;
-    left: 82vw;
+    top: 47vh;
+    left: 37vh;
 }
 
 #fruit6 {
-    top: 16vw;
-    left: 35vw;
+    top: 12vh;
+    left: 23vh;
 }
 
 #fruit7 {
-    top: 7vw;
-    left: 52vw;
+    top: 47vh;
+    left: 49vh;
 }
 
 #fruit8 {
-    top: 139vw;
-    left: 17vw;
+    top: 54vh;
+    left: 9vh;
 }
 
 #fruit9 {
-    top: 111vw;
-    left: 78vw;
+    top: 81vh;
+    left: 41vh;
 }
 
 #fruit10 {
-    top: 92vw;
-    left: 21vw;
+    top: 55vh;
+    left: 16vh;
 }
 
 #fruit11 {
-    top: 82vw;
-    left: 60vw;
+    top: 35vh;
+    left: 50vh;
 }
 #fruit12 {
-    top: 110vw;
-    left: 14vw;
+    top: 82vh;
+    left: 6vh;
 }
 
 #fruit13 {
-    top: 23vw;
-    left: 73vw;
+    top: 13vh;
+    left: 41vh;
 }
 
 #fruit14 {
-    top: 79vw;
-    left: 69vw;
+    top: 3vh;
+    left: 4vh;
 }
 
 #fruit15 {
-    top: 78vw;
-    left: 88vw;
+    top: 75vh;
+    left: 34vh;
 }
 
 
 .score{
     position: absolute;
+    top:10px;
     width: 30%;
 }
 
@@ -121,6 +132,7 @@ max-width: 100%;
     right:9px;
     position: absolute;
     width: 30%;
+    top:10px;
 }
 
 .timeBackground{
@@ -160,4 +172,28 @@ max-width: 100%;
     z-index: 1;
    
 
+}
+
+/* .watermark{
+    
+    height: 200px;
+    width: 200px;
+    border: 1px solid #aaa;
+    margin: 10px;
+    display: flex;
+  } */
+    
+
+
+.suZhang{
+    position: absolute;
+    color: rgb(251, 253, 213);
+    font-size: 2vh;
+    text-align: center;
+    bottom: 20px;
+    width: 100%;
+}
+
+.timeUp{
+    top:10px;
 }
