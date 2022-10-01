@@ -159,7 +159,7 @@
 .StartGame {
     background-color: rgb(197, 23, 23);
     padding: 20px;
-    font-size: 5vw;
+    font-size: 3vh;
     color: rgb(232, 205, 0);
     border: solid 3px rgb(232, 205, 0);
     border-radius: 15px;

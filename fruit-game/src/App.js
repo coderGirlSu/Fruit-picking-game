@@ -12,7 +12,7 @@ import WaterMark from "./component/WaterMark";
 
 const initialState ={
   score:0,
-  timer:5,
+  timer:30,
   start: false,
   showTimeUp:false
 }

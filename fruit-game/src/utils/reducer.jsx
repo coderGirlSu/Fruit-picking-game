@@ -16,7 +16,8 @@ export default function reducer(state,action){
             return{
                 ...state,
                 start:true,
-                timer:5,
+                timer:30,
+                score:0,
                 interval:action.data
             }
         }case 'updateTimer':{
