@@ -45,13 +45,16 @@ function App() {
       <Fruit id="fruit13" />
       <Fruit id="fruit14" />
       <Fruit id="fruit15" />
-      <Score />
-      <Timer /> </>}
-      { !store.start && <StartGame />}
+       
+      </>
+      }
+      {!store.start && <StartGame />}
       {store.showTimeUp && <TimeUp />}
+      <Score />
+      <Timer />
   </StateContext.Provider>
     <WaterMark />
-  
+    
     </div>
   );
 }
