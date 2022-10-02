@@ -1,5 +1,5 @@
 import Fruit from "./component/Fruit";
-import {React,useEffect,useReducer} from "react";
+import {React,useReducer} from "react";
 import reducer from "./utils/reducer";
 import Score from "./component/Score";
 import { StateContext } from "./utils/stateContext";
