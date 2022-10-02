@@ -1,5 +1,5 @@
 import Fruit from "./component/Fruit";
-import {React,useReducer} from "react";
+import {React,useEffect,useReducer} from "react";
 import reducer from "./utils/reducer";
 import Score from "./component/Score";
 import { StateContext } from "./utils/stateContext";
@@ -14,15 +14,18 @@ const initialState ={
   score:0,
   timer:30,
   start: false,
-  showTimeUp:false
+  showTimeUp:false,
+  bananaSounds:[]
 }
 
 function App() {
 
   const[store, dispatch] = useReducer(reducer, initialState)
   
+ 
+    
 
-
+  
   return (
     <div id="app">
       <img id="tree" src="images/tree3.png" alt="tree" />
