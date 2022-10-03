@@ -46,8 +46,7 @@ function App() {
       <Fruit id="fruit14" />
       <Fruit id="fruit15" />
        
-      </>
-      }
+      </>}
       {!store.start && <StartGame />}
       {store.showTimeUp && <TimeUp />}
       <Score />

@@ -36,6 +36,9 @@ export default function reducer(state,action){
 
                 newState.bananaSounds.push(bananaSound)
             }
+            if(state.showTimeUp){
+                newState.showTimeUp = false
+            }
             return newState
 
         }case 'updateTimer':{
