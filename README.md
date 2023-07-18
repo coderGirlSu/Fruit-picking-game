@@ -1,4 +1,6 @@
-# Fruit-picking-game
+# 🍊 Fruit picking game 🍎
+
+### [🕹️ Click here to play!](https://fruit.codergirlsu.dev)
 
 <img width="400" alt="image" src="https://github.com/coderGirlSu/Fruit-picking-game/assets/95465740/7db7be0c-06dc-4cf2-93a6-f28f69594aab">
 
